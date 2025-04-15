@@ -143,9 +143,13 @@
 
   #subnav {
     display: flex;
-    padding-left: 60px;
-    gap: 1007px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 72px 0;
+    flex-wrap: wrap;
+    gap: 20px;
   }
+  
 
   #greyBoxes {
     display: flex;
@@ -159,3 +163,9 @@
     display: flex;
     justify-content: space-between;
   }
+@media (max-width: 1024px) {
+    #subnav {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
